@@ -3,7 +3,7 @@ entries:
   realchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-28T22:53:36.016784+07:00"
+    created: "2024-03-28T23:43:20.520165+07:00"
     description: A Helm chart for Kubernetes
     digest: 72e4d56c9fe25c7dc7307a2a7baed32eb559f5873b4239561cab2f190a04841f
     name: realchart
@@ -13,22 +13,32 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-28T22:53:36.015661+07:00"
+    created: "2024-03-28T23:43:20.520517+07:00"
+    description: A Helm chart for Kubernetes
+    digest: 84e1a02cf0cafe05da2b0055f5762561cfcadd3b8e9e19b5579560f5d2bb2be4
+    name: realchart
+    type: application
+    urls:
+    - https://phucnguyen25392.github.io/devops-charts/charts/realchart-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-28T23:43:20.519698+07:00"
     description: A Helm chart for Kubernetes
     digest: cfade50a3a5bb464dca0cc5f6c25c0e79e87debe32862522d4d5037fc2513a32
     name: realchart
     type: application
     urls:
-    - https://github.com/phucnguyen25392/devops-charts.git/realchart-0.1.1.tgz
+    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-28T22:53:36.015334+07:00"
+    created: "2024-03-28T23:43:20.519246+07:00"
     description: A Helm chart for Kubernetes
     digest: 60cbf37968460ec09f5d87893bbc6aabe7aea4a1c2eae7d55f62967d9f1cc320
     name: realchart
     type: application
     urls:
-    - https://github.com/phucnguyen25392/devops-charts.git/realchart-0.1.0.tgz
+    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-28T22:53:36.014923+07:00"
+generated: "2024-03-28T23:43:20.517547+07:00"
