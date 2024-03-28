@@ -26,7 +26,7 @@ spec:
         - containerPort: {{ .Values.service.targetPort }}
       {{ if .Values.resources }}
       {{- $resources := .Values.resources }}
-      resources: {{ if $resources }}
+        resources: {{ if $resources }}
           {{ toYaml $resources | indent 10 | trim }}{{- end }}
       {{- end }}
       {{ if .Values.priorityClassName }}
