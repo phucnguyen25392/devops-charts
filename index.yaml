@@ -9,7 +9,7 @@ entries:
     name: realchart
     type: application
     urls:
-    - https://github.com/phucnguyen25392/devops-charts.git/realchart-0.1.2.tgz
+    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
