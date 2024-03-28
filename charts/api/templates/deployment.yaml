@@ -20,15 +20,20 @@ spec:
         app: {{ .Values.name }}
     spec:
       containers:
-      - name: {{ .Values.service.targetPort }}
-        image:  {{ .Values.image.repository }}
+      - name: {{ .Values.name }}
+        image:  {{ .Values.image.repository }}:{{ .Values.image.tag }}
         ports:
         - containerPort: {{ .Values.service.targetPort }}
       {{ if .Values.resources }}
       {{- $resources := .Values.resources }}
         resources: {{ if $resources }}
           {{ toYaml $resources | indent 10 | trim }}{{- end }}
-      {{- end }}
+        {{- end }}
+        {{ if .Values.lifecycle }}
+        {{- $lifecycle := .Values.lifecycle }}
+        lifecycle: {{ if $lifecycle }}
+          {{ toYaml $lifecycle | indent 10 | trim }}{{ end }}
+        {{ end }} 
       {{ if .Values.priorityClassName }}
       priorityClassName: "{{ .Values.priorityClassName }}"
       {{- end }}
