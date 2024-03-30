@@ -1,0 +1,27 @@
+{{- range $image := .Values.images }}
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: {{ printf "%s-%s" $image.name $.Values.environment }}
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: {{ $image.name }}-image
+  filterTags:
+    {{- if $image.filterPattern }}
+    pattern: "{{ $image.filterPattern }}"
+    {{- else }}
+    pattern: "{{ $.Values.default.filterPattern }}"
+    {{- end }}
+    {{- if $image.filterExtract }}
+    extract: "{{ $image.filterExtract }}"
+    {{- end }}
+  policy:
+    semver:
+      {{- if $image.semverRange }}
+      range: '{{ $image.semverRange }}'
+      {{- else }}
+      range: '{{ $.Values.default.semverRange }}'
+      {{- end }}
+{{- end }}

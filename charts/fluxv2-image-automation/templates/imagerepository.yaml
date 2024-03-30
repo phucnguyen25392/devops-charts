@@ -1,0 +1,16 @@
+{{- range $image := .Values.images }}
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: {{ $image.name }}-image
+spec:
+  image: {{ $image.url }}
+  {{- if $image.interval }}
+  interval: {{ $image.interval  }}
+  {{- else }}
+  interval: {{ $.Values.default.interval | default "2m0s" }}
+  {{- end }}
+  secretRef:
+    name: {{ $.Values.secretRef | quote }}
+{{- end }}

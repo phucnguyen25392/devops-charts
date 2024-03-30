@@ -1,0 +1,9 @@
+apiVersion: v1
+appVersion: 0.0.3
+description: Create Fluxcd V2 automation resources
+keywords:
+- fluxcd v2
+- helm
+- charts repo
+name: fluxv2-image-automation
+version: 1.1.1

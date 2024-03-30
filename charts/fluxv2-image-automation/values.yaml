@@ -1,0 +1,30 @@
+images:
+  - name: ''
+    url: ''
+    interval:
+    filterPattern:
+    filterExtract:
+    semverRange:
+
+git:
+  name: 'api-git'
+  branch: 'master'
+  user: 'nphphuc'
+  email: 'hellboy.1315@gmail.com'
+
+update:
+  path:
+
+namespace:
+
+secretRef:
+
+default:
+  filterPattern: '*'
+  semverRange: "1.x.x"
+  interval: 2m0s
+
+alert:
+  provider: ""
+  eventSeverity: info
+  summary: "Flux Alert"

@@ -1,0 +1,46 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: image-update-automation-{{ $.Values.namespace }}
+spec:
+  interval: {{ $.Values.default.interval | default "2m0s" }}
+  sourceRef:
+    kind: GitRepository
+    name: {{ $.Values.git.name }}
+  git:
+    checkout:
+      ref:
+        branch: {{ $.Values.git.branch }}
+    commit:
+      author:
+        email: {{ $.Values.git.email }}
+        name: {{ $.Values.git.user }}
+      messageTemplate: |
+        {{`
+        Automated image update
+
+        Automation name: {{ .AutomationObject }}
+
+        Files:
+        {{ range $filename, $_ := .Updated.Files -}}
+        - {{ $filename }}
+        {{ end -}}
+
+        Objects:
+        {{ range $resource, $_ := .Updated.Objects -}}
+        - {{ $resource.Kind }} {{ $resource.Name }}
+        {{ end -}}
+
+        Images:
+        {{ range .Updated.Images -}}
+        - {{.}}
+        {{ end -}}
+        `}}
+    push:
+      branch: {{ $.Values.git.branch }}
+  update:
+    strategy: Setters
+    {{- if $.Values.update.path }}
+    path: {{ $.Values.update.path }}
+    {{- end }}

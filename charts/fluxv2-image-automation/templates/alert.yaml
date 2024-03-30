@@ -1,0 +1,19 @@
+{{- if .Values.alert.provider }}
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: {{ .Release.Name }}-alert
+spec:
+  providerRef:
+    name: {{ .Values.alert.provider }} 
+  eventSeverity: {{ .Values.alert.eventSeverity }}
+  summary: {{ .Values.alert.summary }}
+  eventSources:
+{{- range $image := .Values.images }}
+  - kind: ImageRepository
+    name: {{ $image.name }}-image
+    namespace: {{ $.Release.Namespace}}
+{{- end }}
+
+{{- end }}
