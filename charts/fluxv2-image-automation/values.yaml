@@ -17,7 +17,8 @@ update:
 
 namespace:
 
-secretRef:
+provider: generic
+secretRef: ""
 
 default:
   filterPattern: '*'

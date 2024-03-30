@@ -11,6 +11,9 @@ spec:
   {{- else }}
   interval: {{ $.Values.default.interval | default "2m0s" }}
   {{- end }}
-  secretRef:
+  {{- if $.Values.provider }}
+  provider: {{ $.Values.provider }}
+  {{- end }}
+  secretRef: 
     name: {{ $.Values.secretRef | quote }}
 {{- end }}
