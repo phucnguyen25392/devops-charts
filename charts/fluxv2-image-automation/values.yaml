@@ -17,7 +17,7 @@ update:
 
 namespace:
 
-provider: generic
+provider:
 secretRef:
 
 default:

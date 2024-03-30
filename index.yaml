@@ -3,9 +3,22 @@ entries:
   fluxv2-image-automation:
   - apiVersion: v1
     appVersion: 0.0.3
-    created: "2024-03-30T12:26:45.397641+07:00"
+    created: "2024-03-30T14:58:29.031506+07:00"
     description: Create Fluxcd V2 automation resources
-    digest: 276ca901673ed34f589f31146d4f4088fe085202de82d3f4f38f1987bbcc0932
+    digest: 188edd06f5c4b0fe15f55ef67cb307a5e0a5049929a12ed34bcb6ad8ac09105f
+    keywords:
+    - fluxcd v2
+    - helm
+    - charts repo
+    name: fluxv2-image-automation
+    urls:
+    - https://phucnguyen25392.github.io/devops-charts/fluxv2-image-automation-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v1
+    appVersion: 0.0.3
+    created: "2024-03-30T14:58:29.031213+07:00"
+    description: Create Fluxcd V2 automation resources
+    digest: 2a00d46f059a2405477c64146c870e13fbb4edb8580928975538fc8b4a575c08
     keywords:
     - fluxcd v2
     - helm
@@ -17,7 +30,7 @@ entries:
   realchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-30T12:26:45.402025+07:00"
+    created: "2024-03-30T14:58:29.034343+07:00"
     description: A Helm chart for Kubernetes
     digest: 72e4d56c9fe25c7dc7307a2a7baed32eb559f5873b4239561cab2f190a04841f
     name: realchart
@@ -27,7 +40,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-30T12:26:45.401454+07:00"
+    created: "2024-03-30T14:58:29.033755+07:00"
     description: A Helm chart for Kubernetes
     digest: cfade50a3a5bb464dca0cc5f6c25c0e79e87debe32862522d4d5037fc2513a32
     name: realchart
@@ -37,7 +50,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-30T12:26:45.399669+07:00"
+    created: "2024-03-30T14:58:29.033102+07:00"
     description: A Helm chart for Kubernetes
     digest: 60cbf37968460ec09f5d87893bbc6aabe7aea4a1c2eae7d55f62967d9f1cc320
     name: realchart
@@ -45,4 +58,4 @@ entries:
     urls:
     - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-30T12:26:45.39721+07:00"
+generated: "2024-03-30T14:58:29.030446+07:00"

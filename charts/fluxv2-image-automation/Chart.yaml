@@ -6,4 +6,4 @@ keywords:
 - helm
 - charts repo
 name: fluxv2-image-automation
-version: 1.1.1
+version: 1.1.2
