@@ -175,7 +175,3 @@ manager:
 
 secret:
   enabled: true
-  # -- Labels for the Secret
-  labels: {}
-  # -- Annotations for the Secret
-  annotations: {}

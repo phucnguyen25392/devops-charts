@@ -3,7 +3,7 @@ entries:
   fluxv2-image-automation:
   - apiVersion: v1
     appVersion: 0.0.3
-    created: "2024-10-29T12:37:30.285458+07:00"
+    created: "2024-11-07T14:36:43.9379+07:00"
     description: Create Fluxcd V2 automation resources
     digest: 188edd06f5c4b0fe15f55ef67cb307a5e0a5049929a12ed34bcb6ad8ac09105f
     keywords:
@@ -12,11 +12,11 @@ entries:
     - charts repo
     name: fluxv2-image-automation
     urls:
-    - https://phucnguyen25392.github.io/devops-charts/fluxv2-image-automation-1.1.2.tgz
+    - https://github.com/phucnguyen25392/devops-charts.git/fluxv2-image-automation-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v1
     appVersion: 0.0.3
-    created: "2024-10-29T12:37:30.28504+07:00"
+    created: "2024-11-07T14:36:43.937491+07:00"
     description: Create Fluxcd V2 automation resources
     digest: 2a00d46f059a2405477c64146c870e13fbb4edb8580928975538fc8b4a575c08
     keywords:
@@ -25,48 +25,58 @@ entries:
     - charts repo
     name: fluxv2-image-automation
     urls:
-    - https://phucnguyen25392.github.io/devops-charts/fluxv2-image-automation-1.1.1.tgz
+    - https://github.com/phucnguyen25392/devops-charts.git/fluxv2-image-automation-1.1.1.tgz
     version: 1.1.1
   k6-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-29T12:37:30.287734+07:00"
+    created: "2024-11-07T14:36:43.942294+07:00"
+    description: A Helm chart for Kubernetes
+    digest: db9af42afb71449cabbd76cbda99b0dc98fb2f267bc84b0c35209e321f9a7bab
+    name: k6-operator
+    type: application
+    urls:
+    - https://github.com/phucnguyen25392/devops-charts.git/k6-operator-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-11-07T14:36:43.940816+07:00"
     description: A Helm chart for Kubernetes
     digest: f12c39c37ad46c2b2e67d9cd9336fc1c6b87f03d97844ca3e767a1dc0e9ad2ff
     name: k6-operator
     type: application
     urls:
-    - https://phucnguyen25392.github.io/devops-charts/k6-operator-0.1.0.tgz
+    - https://github.com/phucnguyen25392/devops-charts.git/k6-operator-0.1.0.tgz
     version: 0.1.0
   realchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-29T12:37:30.289268+07:00"
+    created: "2024-11-07T14:36:43.943547+07:00"
     description: A Helm chart for Kubernetes
     digest: 72e4d56c9fe25c7dc7307a2a7baed32eb559f5873b4239561cab2f190a04841f
     name: realchart
     type: application
     urls:
-    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.2.tgz
+    - https://github.com/phucnguyen25392/devops-charts.git/realchart-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-29T12:37:30.28889+07:00"
+    created: "2024-11-07T14:36:43.943169+07:00"
     description: A Helm chart for Kubernetes
     digest: cfade50a3a5bb464dca0cc5f6c25c0e79e87debe32862522d4d5037fc2513a32
     name: realchart
     type: application
     urls:
-    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.1.tgz
+    - https://github.com/phucnguyen25392/devops-charts.git/realchart-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-29T12:37:30.288387+07:00"
+    created: "2024-11-07T14:36:43.942756+07:00"
     description: A Helm chart for Kubernetes
     digest: 60cbf37968460ec09f5d87893bbc6aabe7aea4a1c2eae7d55f62967d9f1cc320
     name: realchart
     type: application
     urls:
-    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.0.tgz
+    - https://github.com/phucnguyen25392/devops-charts.git/realchart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-29T12:37:30.283847+07:00"
+generated: "2024-11-07T14:36:43.936526+07:00"
