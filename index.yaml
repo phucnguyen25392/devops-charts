@@ -3,7 +3,7 @@ entries:
   fluxv2-image-automation:
   - apiVersion: v1
     appVersion: 0.0.3
-    created: "2025-02-28T15:00:30.496761+07:00"
+    created: "2025-02-28T15:13:38.514135+07:00"
     description: Create Fluxcd V2 automation resources
     digest: 188edd06f5c4b0fe15f55ef67cb307a5e0a5049929a12ed34bcb6ad8ac09105f
     keywords:
@@ -16,7 +16,7 @@ entries:
     version: 1.1.2
   - apiVersion: v1
     appVersion: 0.0.3
-    created: "2025-02-28T15:00:30.496372+07:00"
+    created: "2025-02-28T15:13:38.513675+07:00"
     description: Create Fluxcd V2 automation resources
     digest: 2a00d46f059a2405477c64146c870e13fbb4edb8580928975538fc8b4a575c08
     keywords:
@@ -30,7 +30,7 @@ entries:
   k6-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-28T15:00:30.500827+07:00"
+    created: "2025-02-28T15:13:38.520438+07:00"
     description: A Helm chart for Kubernetes
     digest: 3d73682e7c85aee7f59374ec09bf298b27507c69f774341ee359b25ba4c2244f
     name: k6-operator
@@ -40,7 +40,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-28T15:00:30.49876+07:00"
+    created: "2025-02-28T15:13:38.517618+07:00"
     description: A Helm chart for Kubernetes
     digest: f12c39c37ad46c2b2e67d9cd9336fc1c6b87f03d97844ca3e767a1dc0e9ad2ff
     name: k6-operator
@@ -51,9 +51,19 @@ entries:
   realchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-28T15:00:30.501805+07:00"
+    created: "2025-02-28T15:13:38.522028+07:00"
     description: A Helm chart for Kubernetes
-    digest: 6f9c6f371b20d1ba1d33ed920702dba9622245aed08601712d6fb458c9fa887b
+    digest: 1e18158f6b5099095108b561a2d2cb87e2a2d2a30ad17587e87d77064df40755
+    name: realchart
+    type: application
+    urls:
+    - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-02-28T15:13:38.521766+07:00"
+    description: A Helm chart for Kubernetes
+    digest: 041481474278f5349979e31b827b8d5dd5a25e95041db4140a3d19797d5f29c8
     name: realchart
     type: application
     urls:
@@ -61,7 +71,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-28T15:00:30.501556+07:00"
+    created: "2025-02-28T15:13:38.521462+07:00"
     description: A Helm chart for Kubernetes
     digest: cfade50a3a5bb464dca0cc5f6c25c0e79e87debe32862522d4d5037fc2513a32
     name: realchart
@@ -71,7 +81,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-28T15:00:30.501217+07:00"
+    created: "2025-02-28T15:13:38.521012+07:00"
     description: A Helm chart for Kubernetes
     digest: 60cbf37968460ec09f5d87893bbc6aabe7aea4a1c2eae7d55f62967d9f1cc320
     name: realchart
@@ -79,4 +89,4 @@ entries:
     urls:
     - https://phucnguyen25392.github.io/devops-charts/realchart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-28T15:00:30.495471+07:00"
+generated: "2025-02-28T15:13:38.512252+07:00"
