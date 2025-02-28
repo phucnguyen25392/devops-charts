@@ -2,6 +2,8 @@ my charts
 
 helm package ./charts/k6-operator/
 
+helm package --version 0.1.3 ./charts/api
+
 helm repo index --url https://phucnguyen25392.github.io/devops-charts --merge index.yaml .
 
 use --merge flag to add new charts to an existing index incrementally.yaml:
