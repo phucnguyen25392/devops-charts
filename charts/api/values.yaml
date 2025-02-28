@@ -1,5 +1,5 @@
 name: realvcard
-namespace: staging
+namespace: api
 
 image:
   repository: realmaxwebapp1/realvcard
